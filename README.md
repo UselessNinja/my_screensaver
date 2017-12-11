@@ -1,7 +1,7 @@
 # my_screensaver
-Done for Epitech.
+It was a project I've done for EPITECH as an assignement.
+Be careful it doesn't respect EPITECH's Coding Style.
 
-Can be used as a base for the my screensaver project, but be careful it doesn't respect the EPITECH Coding Style.
 ## Usage :
 Compile it with :
 `<make>`
