@@ -5,7 +5,7 @@ Be careful it doesn't respect EPITECH's Coding Style.
 
 ## Usage :
 Compile it with :
-`<make>`
+`make`
 then run it using :
-`<./my_screensaver -h>`
+`./my_screensaver -h`
 for the usage.
