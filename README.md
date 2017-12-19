@@ -9,3 +9,5 @@ Compile it with :
 then run it using :
 `./my_screensaver -h`
 for the usage.
+
+### EDIT (12/19/2017) : I redone most of the code for a regrading of the project. Still functions as normal.
