@@ -25,7 +25,7 @@ void pattern_epsilon (void)
 			if(event.type == sfEvtClosed)
 				sfRenderWindow_close(window);
 			}
-		sfColor random = sfColor_fromRGBA(0, 153, 204, rand());
+		sfColor random = my_rgba(0, 153, 204, rand());
 		my_put_circle(image, random);
 		sfTexture_updateFromPixels(texture, image->pixels, image->width, image->height, 0, 0);
 		sfRenderWindow_drawSprite(window, sprite, NULL);
@@ -57,4 +57,16 @@ void my_put_circle(framebuffer_t *image, sfColor color)
 			error += y*2+1;
 		}
 	}
+}
+
+sfColor my_rgba(sfUint8 r, sfUint8 g, sfUint8 b, sfUint8 a)
+{
+	sfColor color;
+
+	color.r = r;
+	color.g = g;
+	color.b = b;
+	color.a = a;
+
+	return (color);
 }

@@ -24,7 +24,7 @@ void pattern_alpha (void)
 			if(event.type == sfEvtClosed)
 				sfRenderWindow_close(window);
 			}
-		sfColor random = sfColor_fromRGBA(rand(), rand(), rand(), rand());
+		sfColor random = my_rgba(rand(), rand(), rand(), rand());
 		my_put_liner(image, random, window);
 		sfTexture_updateFromPixels(texture, image->pixels, image->width, image->height, 0, 0);
 		sfRenderWindow_drawSprite(window, sprite, NULL);
@@ -57,7 +57,7 @@ void pattern_beta (void)
 			if(event.type == sfEvtClosed)
 				sfRenderWindow_close(window);
 			}
-		sfColor random = sfColor_fromRGBA(247, 247, 247, rand());
+		sfColor random = my_rgba(247, 247, 247, rand());
 		my_put_pixel(image, safe_random_x(), safe_random_y(), random);
 		sfTexture_updateFromPixels(texture, image->pixels, image->width, image->height, 0, 0);
 		sfRenderWindow_drawSprite(window, sprite, NULL);

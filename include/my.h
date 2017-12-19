@@ -28,4 +28,6 @@ struct framebuffer {
 typedef struct framebuffer framebuffer_t;
 framebuffer_t *random_lines (framebuffer_t *image);
 
+sfColor my_rgba(sfUint8 r, sfUint8 g, sfUint8 b, sfUint8 a);
+
 #endif /* !STRUCT_H_ */
